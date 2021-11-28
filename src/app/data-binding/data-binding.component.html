@@ -1,0 +1,9 @@
+<div class="box">
+  <input [(ngModel)]="age" />
+  <div *ngIf="age > 18">Bạn già rồi</div>
+  <div *ngIf="age <= 18">Bạn còn trẻ chán</div>
+
+  <div *ngIf="age > 18; then gia else tre"></div>
+  <ng-template #gia>Bạn già rồi</ng-template>
+  <ng-template #tre>Bạn còn trẻ chán</ng-template>
+</div>
