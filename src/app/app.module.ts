@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { FilterNgForComponent } from './filter-ng-for/filter-ng-for.component';
+import { VnDataComponent } from './vn-data/vn-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    FilterNgForComponent,
+    VnDataComponent
   ],
   imports: [
     BrowserModule,

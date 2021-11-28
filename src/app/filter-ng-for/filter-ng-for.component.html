@@ -1,0 +1,14 @@
+<p>Danh sách các từ</p>
+<select [(ngModel)]="option">
+  <option value="all">Xem tất cả</option>
+  <option value="memorized">Xem đã nhớ</option>
+  <option value="unmemorized">Xem xem chưa nhớ</option>
+</select>
+<div *ngFor="let word of arrWords">
+  <div *ngIf="showFilter(word.memorized)" class="box">
+    <h3>word.vn</h3>
+    <h3>word.en</h3>
+    <p *ngIf="word.memorized">Đã nhớ</p>
+    <p *ngIf="!word.memorized">Chưa nhớ</p>
+  </div>
+</div>
