@@ -9,6 +9,7 @@ import { FilterNgForComponent } from './filter-ng-for/filter-ng-for.component';
 import { VnDataComponent } from './vn-data/vn-data.component';
 import { HighLightDirective } from './Directives/high-light.directive';
 import { AboutComponent } from './about/about.component';
+import { DrivenFormComponent } from './driven-form/driven-form.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AboutComponent } from './about/about.component';
     VnDataComponent,
     HighLightDirective,
     AboutComponent,
+    DrivenFormComponent,
 
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
