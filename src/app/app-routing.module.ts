@@ -1,3 +1,4 @@
+import { GetDataComponent } from './get-data/get-data.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { DrivenFormComponent } from './driven-form/driven-form.component';
 import { AboutComponent } from './about/about.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path : 'vn-data', component:VnDataComponent},
   {path : 'about',component:AboutComponent},
   {path : 'driven-form', component:DrivenFormComponent},
-  {path : 'reactive-form', component:ReactiveFormComponent}
+  {path : 'reactive-form', component:ReactiveFormComponent},
+  {path: 'get-data', component:GetDataComponent}
 ];
 
 @NgModule({

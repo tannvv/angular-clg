@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { HighLightDirective } from './Directives/high-light.directive';
 import { AboutComponent } from './about/about.component';
 import { DrivenFormComponent } from './driven-form/driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { GetDataComponent } from './get-data/get-data.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     AboutComponent,
     DrivenFormComponent,
     ReactiveFormComponent,
+    GetDataComponent,
 
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule,ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule,ReactiveFormsModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
