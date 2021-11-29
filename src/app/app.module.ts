@@ -4,12 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterNgForComponent } from './filter-ng-for/filter-ng-for.component';
 import { VnDataComponent } from './vn-data/vn-data.component';
 import { HighLightDirective } from './Directives/high-light.directive';
 import { AboutComponent } from './about/about.component';
 import { DrivenFormComponent } from './driven-form/driven-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import { DrivenFormComponent } from './driven-form/driven-form.component';
     HighLightDirective,
     AboutComponent,
     DrivenFormComponent,
+    ReactiveFormComponent,
 
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

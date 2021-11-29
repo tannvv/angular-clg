@@ -1,3 +1,4 @@
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { DrivenFormComponent } from './driven-form/driven-form.component';
 import { AboutComponent } from './about/about.component';
 import { VnDataComponent } from './vn-data/vn-data.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   {path : 'home', component : HomeComponent},
   {path : 'vn-data', component:VnDataComponent},
   {path : 'about',component:AboutComponent},
-  {path : 'driven-form', component:DrivenFormComponent}
+  {path : 'driven-form', component:DrivenFormComponent},
+  {path : 'reactive-form', component:ReactiveFormComponent}
 ];
 
 @NgModule({

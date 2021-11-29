@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class CommonService {
 
   constructor() { }
-  getData(data : string):void{
-      console.log('Đây là data của service : ' + data)
+  getData(data : any):void{
+      console.log('Đây là data của service :' , data)
   }
 }

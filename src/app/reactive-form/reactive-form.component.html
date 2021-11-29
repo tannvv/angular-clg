@@ -1,0 +1,7 @@
+<form [formGroup]="profileData"  (ngSubmit)="onSubmit()">
+  <input type="text" formControlName='name'/>
+  <div *ngIf="!profileData.controls['name'].valid">sai roi</div>
+  <input type="text" formControlName='age'/>
+  <button type="submit" [disabled]="!profileData.valid" >Submit</button>
+</form>
+
